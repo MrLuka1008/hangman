@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="./script/script.js"></script>
+    <title>Hangman</title>
+  </head>
+  <body>
+    <main>
+      <div class="game-side">
+        <div class="left-side">
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="right-side">
+          <div class="hint">
+            <h2 id="hints"></h2>
+          </div>
+
+          <div class="answer">
+            <h2 id="answers"></h2>
+          </div>
+
+          <div id="alphabets-cotainer"></div>
+        </div>
+
+        <div class="life-container">
+          <label id="losescore">5</label>
+        </div>
+      </div>
+
+      <div class="win-container win-lose-container" id="win-container">
+        <h2>You Win !!!</h2>
+        <a href="./game.html">Play Again</a>
+      </div>
+
+      <div class="lose-container win-lose-container" id="lose-container">
+        <img src="./img/poison.png" alt="lose" />
+        <h2>You Lose !!!</h2>
+        <a href="./game.html">Play Again</a>
+      </div>
+    </main>
+  </body>
+</html>
